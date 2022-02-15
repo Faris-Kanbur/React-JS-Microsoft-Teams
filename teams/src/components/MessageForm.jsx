@@ -37,15 +37,11 @@ const MessageForm = (props) => {
         onChange={handleChange}
         onSubmit={handleSubmit}
       />
-
-      {/* icon button for add image */}
       <label htmlFor="upload-button">
         <span className="image-button">
           <PictureOutlined className="picture-icon" />
         </span>
       </label>
-
-      {/* input func button to upload pic */}
       <input
         type="file"
         multiple={false}
@@ -53,8 +49,6 @@ const MessageForm = (props) => {
         style={{ display: "none" }}
         onChange={handleUpload.bind(this)}
       />
-
-      {/* icon button for send/submit message */}
       <button type="submit" className="send-button">
         <SendOutlined className="send-icon" />
       </button>
